@@ -1,11 +1,6 @@
-import math
-number = int(input("Enter a number: "))
+import Divide_or_square
 
-def divide_or_square(number):
-    if number % 5 == 0:
-        number = round(math.sqrt(number), 2)
-    else:
-        number = number % 5
-    return number
-
-print(divide_or_square(number))
+def test_divide_or_square():
+	actual_result = Divide_or_square.divide_or_square(10)
+	expected_result = round(3.16, 2)
+	assert actual_result == expected_result

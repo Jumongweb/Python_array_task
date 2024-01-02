@@ -6,4 +6,3 @@ def zeroed(my_list):
 array = [2,5,1,6,9,43]
 
 print(zeroed(array))
-print(len(array))
